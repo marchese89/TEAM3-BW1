@@ -1,0 +1,26 @@
+body{
+    background-image: url('../assets/images/bg.jpg');
+}
+
+img{
+    width: 200px;
+    margin-left: 103px;
+    margin-top: 68px;
+}
+
+
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 40px;
+    margin-left: 568px;
+    margin-right: 383px;
+}
+
+
+p{
+    color: white;
+    margin-top: 135px;
+    margin-left: 789px;
+}
