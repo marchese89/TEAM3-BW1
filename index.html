@@ -3,17 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="assets/css/reset.css" /> -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Document</title>
+    <title>Welcome</title>
   </head>
   <body>
-    <div class="container">
-      <div class="wrapper">
-        <div class="arc arc_start"></div>
-        <div class="arc arc_end"></div>
+    <header>
+      <!-- inserisci logo -->
+      <div class="logo">
+        <img src="./assets/images/epicode_logo.png" alt="Epicode Logo" />
       </div>
-    </div>
-    <script src="assets/script/index.js"></script>
+    </header>
+    <main>
+      <!-- title con parte in grassetto <span>?-->
+      <div id="title">
+        <h1>Welcome to <span> your exam </span></h1>
+      </div>
+      <!-- instructions  con p esplicativo-->
+      <h4>Instructions</h4>
+      <p>
+        We don't expect most engineers to know the answer to all of these
+        questions, so don't worry if you're unsure of a few of them.
+      </p>
+      <!-- unordered list -->
+      <ul id="instructions">
+        <li>
+          Each question is <span>timed</span> and can only be
+          <span> answered once.</span>
+        </li>
+        <li>
+          Changing browser tab or opening other windows will
+          <span> invalidate the question.</span>
+        </li>
+        <li>This exam will take approx. <span> 0-5 minutes</span></li>
+      </ul>
+      <!-- form checkbox e bottone -->
+      <form>
+        <input type="checkbox" id="check" />
+        <label for="check">
+          I promise to answer myself without help from anyone</label
+        >
+        <button class="filled-button" type="submit">PROCEED</button>
+      </form>
+    </main>
   </body>
 </html>
