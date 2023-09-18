@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome page</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/welcome-page.css" />
   </head>
   <body>
     <header>
@@ -15,16 +17,18 @@
     <main>
       <!-- title con parte in grassetto <span>?-->
       <div id="title">
-        <h1>Welcome to <span> your exam </span></h1>
+        <h1>Welcome to
+        <span> your exam </span></h1>
       </div>
       <!-- instructions  con p esplicativo-->
       <h4>Instructions</h4>
       <p>
         We don't expect most engineers to know the answer to all of these
-        questions, so don't worry if you're unsure of a few of them.
-      </p>
+      </p> <p>questions, so don't worry if you're unsure of a few of them.</p>
+      
       <!-- unordered list -->
-      <ul id="instructions">
+      <div id="instructions">
+      <ul>
         <li>
           Each question is <span>timed</span> and can only be
           <span> answered once.</span>
@@ -34,7 +38,7 @@
           <span> invalidate the question.</span>
         </li>
         <li>This exam will take approx. <span> 0-5 minutes</span></li>
-      </ul>
+      </ul></div>
       <!-- form checkbox e bottone -->
       <form>
         <input type="checkbox" id="check" />
