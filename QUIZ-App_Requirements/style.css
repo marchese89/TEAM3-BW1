@@ -1,0 +1,14 @@
+body{
+    background-image: url('../assets/images/bg.jpg');
+}
+
+img{
+    width: 200px;
+    margin-left: 103px;
+    margin-top: 68px;
+}
+
+
+h1{
+    color: white;
+}
