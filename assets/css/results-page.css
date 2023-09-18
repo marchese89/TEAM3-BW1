@@ -1,0 +1,84 @@
+/* .container {
+  width: 30rem;
+  margin: 0 auto;
+} */
+
+main {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.correct {
+  display: inline-block;
+  height: 16 rem;
+  text-align: left;
+  padding-top: 4em;
+}
+
+.cerchio {
+  display: inline-block;
+  height: 16 rem;
+}
+
+.wrong {
+  display: inline-block;
+  height: 16 rem;
+  text-align: right;
+  justify-content: center;
+  padding-top: 4em;
+}
+
+.risultato {
+  padding-top: 3rem;
+  display: flex;
+  width: 60vw;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0);
+  width: 10em;
+  height: 3em;
+  border: 3px solid white;
+  margin-top: 2em;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.cerchio {
+  border: 2.5em solid white;
+  border-radius: 50%;
+  height: 16rem;
+  width: 16rem;
+}
+
+#send-cert {
+  padding: 1em;
+}
+
+.cerchio > div {
+  padding-top: 1.5em;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.cerchio > div > p {
+  padding-top: 2em;
+  padding: 0.8em 1em;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.cerchio > div > p:nth-of-type(2) {
+  color: #00ffff;
+}
+
+#button-div {
+  text-align: center;
+  margin: 0 auto;
+}

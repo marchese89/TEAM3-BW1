@@ -1,3 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@400;700&display=swap");
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Outfit', sans-serif; */
+
+body {
+  background: url(../images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+.logo {
+  width: 10em;
+  padding-left: 4em;
+  padding-top: 4em;
+}
+
+h1 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  padding-bottom: 0.5em;
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+}
+
 /* .accent-color {
   color: #00ffff;
 }

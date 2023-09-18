@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/results-page.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Results page</title>
   </head>
@@ -11,7 +13,7 @@
       <div class="logo-containter">
         <img
           class="logo"
-          src="../assets/images/epicode_logo.png"
+          src="assets/images/epicode_logo.png"
           alt="Logo di Epicode"
         />
       </div>
@@ -24,26 +26,32 @@
       <div class="risultato">
         <div class="correct">
           <h2>Correct</h2>
-          <h1><strong>Ess%</strong></h1>
-          <p>0/0 questions</p>
+          <h1>
+            <strong><span id="correct">66.7</span>&percnt;</strong>
+          </h1>
+          <p>4/6 questions</p>
         </div>
         <div class="cerchio">
           <div>
-            <p>Placeholder!</p>
-            <p>Placeholder.</p>
+            <p>Congratulations!</p>
+            <p>You passed the exam.</p>
           </div>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, fuga.
-            Officia, recusandae consectetur.
+          <p id="send-cert">
+            We'll send you the certificate in few minutes. Check your email
+            (including promotions / spam folder)
           </p>
         </div>
         <div class="wrong">
           <h2>Wrong</h2>
-          <h1><strong>Ess%</strong></h1>
-          <p>0/0 questions</p>
+          <h1>
+            <strong><span id="wrong">33.3</span>&percnt;</strong>
+          </h1>
+          <p>2/6 questions</p>
         </div>
       </div>
+      <div id="button-div">
+        <button><a href="Feedback page.html">RATE US</a></button>
+      </div>
     </main>
-    <button type="submit">RATE US</button>
   </body>
 </html>
