@@ -7,7 +7,8 @@ body {
 }
 header,
 main {
-  width: 85%;
+  /* width: 85%; */
+  width: 45vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -54,13 +55,11 @@ form input {
 }
 /* manca lo sfondo del checkbox invisibile */
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 form button {
-  background-color: #00ffff;
-  padding: 0.8em 2.5em 0.8em 2.5em;
-  border: none;
-  font-weight: bolder;
-  font-size: 1.2em;
   margin-left: 15%;
-  box-shadow: 8px 5px 15px #00ffff4d, -8px -5px 15px #00ffff4d,
-    8px -5px 15px #00ffff4d, -8px 5px 15px #00ffff4d;
 }
