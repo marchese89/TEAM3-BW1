@@ -1,5 +1,5 @@
 body{
-    background-image: url('../assets/images/bg.jpg');
+    background-image: url('/assets/images/bg.jpg');
 }
 
 img{
@@ -13,7 +13,8 @@ h1{
     color: white;
     text-align: center;
     margin-top: 70px;
-    font-size: 40px;
+    font-size: 60px;
+    
     margin-left: 568px;
     margin-right: 383px;
 }
@@ -23,4 +24,20 @@ p{
     color: white;
     margin-top: 135px;
     margin-left: 789px;
+}
+
+.button{
+    width: 90%;
+    text-align: center;
+}
+
+
+.option{
+    display: inline-block;
+    width: 10em;
+}
+
+button{
+    border-radius:2em;
+    height: 5em;
 }
