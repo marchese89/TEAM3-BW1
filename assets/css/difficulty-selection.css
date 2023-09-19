@@ -1,0 +1,38 @@
+header,
+main {
+  /* width: 85%; */
+  width: 45vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Inter", sans-serif;
+}
+h4 {
+  font-size: 2.8em;
+  font-weight: bold;
+  padding: 1em 0em 0.7em 0em;
+  font-family: "Outfit", sans-serif;
+}
+#difficulty {
+  margin-top: 5em;
+}
+
+#many-questions {
+  text-align: right;
+  margin-top: 5em;
+}
+
+form button {
+  margin-left: 90%;
+  margin-top: 6em;
+  text-align: right;
+  padding: 1em 2em;
+  font-size: 1em;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+  padding: 0.2em;
+}
