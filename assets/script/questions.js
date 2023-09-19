@@ -97,31 +97,41 @@ const questions = [
 const addOption1 = function () {
   const questionForm = document.getElementById("question-form");
   const newOption = document.createElement("div");
+
+  // newOption.innerHTML = (
+  //   <button class="tasto" type="radio">
+  //     RISPOSTA
+  //   </button>
+  // );
+  // CHIEDI forse funzione esterna da richiamare ogni volta?
+
   questionForm.appendChild(newOption);
   questionForm.appendChild(newOption);
+  newOption.classList.add = "chosen";
 };
-addOption1();
 
 const addOption2 = function () {
   const questionForm = document.getElementById("question-form");
   const newOption = document.createElement("div");
-  questionForm.appendChild(newOption);
-  questionForm.appendChild(newOption);
-  questionForm.appendChild(newOption);
-  questionForm.appendChild(newOption);
-};
-addOption2();
 
-// manca qualcosa per azzerare l option
+  questionForm.appendChild(newOption);
+  questionForm.appendChild(newOption);
+  questionForm.appendChild(newOption);
+  questionForm.appendChild(newOption);
+  newOption.classList.add = "chosen";
+};
+
+// manca qualcosa per azzerare l option o il cambio di domanda azzera?
 
 const checkAndAdd = function () {
-  for (let i = 1; i < questions.length; i++) {
-    if (questions[i].type === "multiple") {
-      addOption2();
+  for (let i = 0; i < questions.length; i++);
+  {
+    if (questions[i].type === "boolean") {
+      return addOption1();
     } else {
-      addOption1();
+      return addOption2();
     }
   }
 };
-checkAndAdd();
 
+checkAndAdd();
