@@ -12,14 +12,15 @@ h1{
 
 p {
   color: white;
-  margin-top: 135px;
-  margin-left: 730px;
+  margin-top: 98px;
+  margin-left: 676px;
+  
 }
 
 .button {
   width: 90%;
   text-align: center;
-  margin: 0 auto;
+  
 }
 
 .option {
@@ -50,8 +51,9 @@ span{
 .procedi{
   background-image: url("../images/bg.jpg");
   color: white;
-  margin-left: 1287px;
+  
   margin-right: 40px;
+  margin-left: 798px;
   width: 10%;
   height:  4em;
 }
