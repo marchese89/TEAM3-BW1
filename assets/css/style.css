@@ -35,6 +35,16 @@ h2 {
   font-weight: 400;
 }
 
+.correct {
+  border: 2px solid #00ff00;
+  box-shadow: 0 0 5px 2px #00ff00;
+}
+
+.wrong {
+  border: 2px solid red;
+  box-shadow: 0 0 5px 2px red;
+}
+
 /* .accent-color {
   color: #00ffff;
 }
