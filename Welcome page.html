@@ -4,48 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome page</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/welcome-page.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/welcome-page.css" />
   </head>
   <body>
     <header>
       <!-- inserisci logo -->
-      <div class="logo">
-        <img src="./assets/images/epicode_logo.png" alt="Epicode Logo" />
-      </div>
+      <img
+        class="logo"
+        src="./assets/images/epicode_logo.png"
+        alt="Epicode Logo"
+      />
     </header>
     <main>
       <!-- title con parte in grassetto <span>?-->
       <div id="title">
-        <h1>Welcome to
-        <span> your exam </span></h1>
+        <h1>Welcome to <span> your exam </span></h1>
       </div>
       <!-- instructions  con p esplicativo-->
       <h4>Instructions</h4>
-      <p>
-        We don't expect most engineers to know the answer to all of these
-      </p> <p>questions, so don't worry if you're unsure of a few of them.</p>
-      
+      <p>We don't expect most engineers to know the answer to all of these</p>
+      <p>questions, so don't worry if you're unsure of a few of them.</p>
+
       <!-- unordered list -->
       <div id="instructions">
-      <ul>
-        <li>
-          Each question is <span>timed</span> and can only be
-          <span> answered once.</span>
-        </li>
-        <li>
-          Changing browser tab or opening other windows will
-          <span> invalidate the question.</span>
-        </li>
-        <li>This exam will take approx. <span> 0-5 minutes</span></li>
-      </ul></div>
+        <ul>
+          <li>
+            Each question is <span>timed</span> and can only be
+            <span> answered once.</span>
+          </li>
+          <li>
+            Changing browser tab or opening other windows will
+            <span> invalidate the question.</span>
+          </li>
+          <li>This exam will take approx. <span> 0-5 minutes</span></li>
+        </ul>
+      </div>
       <!-- form checkbox e bottone -->
       <form>
-        <input type="checkbox" id="check" />
-        <label for="check">
-          I promise to answer myself without help from anyone</label
-        >
-        <button class="filled-button" type="submit">PROCEED</button>
+        <label class="checkbox-wrapper">
+          <input type="checkbox" name="check" id="check" required />
+          I promise to answer myself without help from anyone
+          <span class="checkmark"></span
+        ></label>
+
+        <button class="filled-button" type="submit">
+          <a href="Difficulty selection.html">PROCEED</a>
+        </button>
       </form>
     </main>
   </body>

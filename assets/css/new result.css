@@ -1,0 +1,126 @@
+main {
+  text-align: center;
+  margin: 0 auto;
+}
+body {
+  margin: 2%;
+}
+.correct {
+  display: inline-block;
+  height: 16 rem;
+  text-align: left;
+  padding-top: 4em;
+}
+.cerchio {
+  display: flex;
+  height: 16 rem;
+}
+
+.wrong {
+  display: inline-block;
+  text-align: right;
+  justify-content: center;
+  padding-top: 4em;
+}
+
+.risultato {
+  padding-top: 3rem;
+  display: flex;
+  width: 60vw;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.cerchio {
+  width: 16rem;
+  height: 16rem;
+
+  text-align: center;
+  position: relative;
+}
+.congratulations {
+  padding: 1.8em 0em;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.send-cert {
+  padding-top: 2rem;
+  font-size: 0.7rem;
+}
+.outter {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+}
+.inner {
+  margin: 1.5rem;
+  height: 13rem;
+  width: 12rem;
+  border-radius: 50%;
+}
+
+.cerchio svg {
+  position: absolute;
+  top: 0;
+  left: -2rem;
+}
+button a {
+  text-decoration: none;
+  color: white;
+}
+button {
+  background-color: rgba(0, 0, 0, 0);
+  width: 10em;
+  height: 3em;
+  border: 3px solid white;
+  margin-top: 2em;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.cerchio > div {
+  padding-top: 1.5em;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+#button-div {
+  text-align: center;
+  margin: 3rem auto;
+}
+bold {
+  color: #00ffff;
+}
+svg {
+  transform: rotate(275deg);
+}
+.circle1 {
+  fill: none;
+  stroke: url(#GradientColor2);
+  stroke-width: 28px;
+  stroke-dasharray: 850;
+}
+
+.circle2 {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 35px;
+  stroke-dasharray: 850;
+  stroke-dashoffset: 0;
+  /* 850 = vuoto
+      0 = pieno*/
+  animation: anim 1s linear backwards;
+}
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 500;
+  }
+}
+/* to do in js, #correct deve essere inserito facendo un calcolo 
+delle risposte giuste. per wrong possiamo usare (100 - correct = wrong+%)
+circle2 dashoffset lo troviamo con 850 - (correct * 8.5)
+circle 2 dashoffset deve essere inserito tramite js creando
+una funzione, 
+per l'animazione bisogna prendere (850 - 850* 0.percentuale)
+#correct 
+

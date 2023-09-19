@@ -7,7 +7,8 @@ body {
 }
 header,
 main {
-  width: 85%;
+  /* width: 85%; */
+  width: 45vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -54,13 +55,62 @@ form input {
 }
 /* manca lo sfondo del checkbox invisibile */
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 form button {
-  background-color: #00ffff;
-  padding: 0.8em 2.5em 0.8em 2.5em;
-  border: none;
-  font-weight: bolder;
-  font-size: 1.2em;
-  margin-left: 15%;
-  box-shadow: 8px 5px 15px #00ffff4d, -8px -5px 15px #00ffff4d,
-    8px -5px 15px #00ffff4d, -8px 5px 15px #00ffff4d;
+  margin-left: 25%;
+}
+
+/* Personalizzo il label e quindi il contenitore dell'input */
+.checkbox-wrapper {
+  display: inline-block;
+  position: relative;
+  padding-left: 29px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 0.8em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Nascondo il checkbox di base del browser */
+.checkbox-wrapper input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* creo il mio checkbox */
+.checkbox-wrapper .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12px;
+  width: 12px;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+/* Creo la spunta all'interno dell'input (inizialmente nascosta) */
+.checkbox-wrapper .checkmark::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: solid #f908c1;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: none;
+}
+.checkbox-wrapper input:checked ~ .checkmark::after {
+  display: block;
 }
