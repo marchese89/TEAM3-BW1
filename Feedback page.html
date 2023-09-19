@@ -14,10 +14,12 @@
     </header>
     <main>
       <h1>Tell us how it's going</h1>
-      <h2>
-        From 0 to 10, how likely are you to recommend Epicode<br />
-        to a friend or a colleague?
-      </h2>
+      <div id="paragraph">
+        <p>
+          From 0 to 10, how likely are you to recommend Epicode<br />
+          to a friend or a colleague?
+        </p>
+      </div>
       <div class="star">
         <div id="1">
           <img src="assets/images/star.svg" alt="star" />
@@ -50,13 +52,16 @@
           <img src="assets/images/star.svg" alt="star" />
         </div>
       </div>
-      <h3>Leave us an open feedback about your experience so far</h3>
+      <div id="feedback">
+        <p>Leave us an open feedback about your experience so far</p>
+      </div>
       <form>
-        <textarea placeholder="Write your comment here"></textarea>
+        <input placeholder="Write your comment here" />
         <button class="filled-button" type="submit">
           <a href="Question page.html">MORE INFO</a>
         </button>
       </form>
     </main>
+    <script src="assets/script/feedback.js"></script>
   </body>
 </html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose your difficulty</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/difficulty-selection.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="./assets/images/epicode_logo.png"
+        alt="Epicode Logo"
+      />
+    </header>
+    <main>
+      <form>
+        <div id="difficulty">
+          <h4>Choose your difficulty</h4>
+
+          <ul>
+            <li>
+              <input
+                type="radio"
+                id="easy"
+                value="easy"
+                name="diff-questions"
+              />
+              <label for="Easy"> Easy</label>
+            </li>
+
+            <li>
+              <input
+                type="radio"
+                id="medium"
+                value="medium"
+                name="diff-questions"
+              />
+              <label for="Medium">Medium</label>
+            </li>
+
+            <li>
+              <input
+                type="radio"
+                id="hard"
+                value="hard"
+                name="diff-questions"
+              />
+              <label for="Hard">Hard</label>
+            </li>
+          </ul>
+        </div>
+
+        <div id="many-questions">
+          <h4>How many questions do you want?</h4>
+          <ul>
+            <li>
+              <label for="Ten">10</label>
+              <input type="radio" name="num-quest" id="Ten" />
+            </li>
+            <li>
+              <label for="Twenty">20</label>
+              <input type="radio" name="num-quest" id="Twenty" />
+            </li>
+            <li>
+              <label for="Twentyfive">25</label>
+              <input type="radio" name="num-quest" id="Twentyfive" />
+            </li>
+          </ul>
+        </div>
+        <button class="filled-button" type="submit">
+          <a href="Question page.html">PROCEED</a>
+        </button>
+      </form>
+    </main>
+  </body>
+</html>
