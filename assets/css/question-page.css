@@ -30,7 +30,7 @@ p {
     margin-top: -9px;
 }
 
-button {
+.tasto {
   background-image: url("../images/bg.jpg");
   
   color: white;
@@ -41,4 +41,17 @@ button {
   width: 170%;
   padding: 20%
   
+}
+
+span{
+  color: rgb(183, 29, 207);
+}
+
+.procedi{
+  background-image: url("../images/bg.jpg");
+  color: white;
+  margin-left: 1287px;
+  margin-right: 40px;
+  width: 10%;
+  height:  4em;
 }
