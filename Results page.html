@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/results-page.css" />
+    <link rel="stylesheet" href="assets/css/new result.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Results page</title>
   </head>
@@ -32,14 +32,50 @@
           <p>4/6 questions</p>
         </div>
         <div class="cerchio">
-          <div>
-            <p>Congratulations!</p>
-            <p>You passed the exam.</p>
+          <div class="outter">
+            <div class="inner">
+              <p class="congratulations">
+                Congratulations! <br /><bold> You passed the exam.</bold>
+              </p>
+
+              <p class="send-cert">
+                We'll send you the certificate <br />
+                in few minutes. <br />
+                Check your email (including <br />promotions / spam folder)
+              </p>
+            </div>
           </div>
-          <p id="send-cert">
-            We'll send you the certificate in few minutes. Check your email
-            (including promotions / spam folder)
-          </p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="300px"
+            height="300px"
+          >
+            <defs>
+              <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#e91e63" />
+                <stop offset="100%" stop-color="#673ab7" />
+              </linearGradient>
+              <linearGradient id="GradientColor2">
+                <stop offset="0%" stop-color="#3ea46c" />
+                <stop offset="100%" stop-color="#00ffff" />
+              </linearGradient>
+            </defs>
+            <circle
+              class="circle1"
+              cx="150"
+              cy="150"
+              r="130"
+              stroke-linecap="round"
+            />
+            <circle
+              class="circle2"
+              cx="150"
+              cy="150"
+              r="130"
+              stroke-linecap="round"
+            />
+          </svg>
         </div>
         <div class="wrong">
           <h2>Wrong</h2>
@@ -53,5 +89,6 @@
         <button><a href="Feedback page.html">RATE US</a></button>
       </div>
     </main>
+    <p id="percent"></p>
   </body>
 </html>
