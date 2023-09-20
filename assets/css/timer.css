@@ -1,0 +1,67 @@
+.timer {
+    display: flex;
+    height: 5rem;
+    margin-right: 3%;
+    justify-content: end;
+    text-align: center;
+    position: relative;
+  }
+  .outterTimer {
+    height: 1rem;
+    width: 90%;
+    border-radius: 50%;
+  }
+  .innerTimer {
+    border-radius: 50%;
+    right: 0;
+    text-align: right;
+  }
+  .seconds {
+    font-size: 10px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 52px;
+    margin-right: -4px;
+  }
+  .tempo {
+    font-size: 30px;
+    margin: 0;
+    margin-top: -2px;
+  }
+  .remaining {
+    font-size: 10px;
+    margin: 0;
+    margin-right: -7px; 
+    
+   
+  }
+  .timer svg {
+    position: absolute;
+    
+    
+    top: -5rem;
+    /* right: 0; */
+    margin-right: -135px;
+    margin-top: 8px;
+  }
+  .timer1 {
+    fill: none;
+    stroke: #ebeded46;
+    stroke-width: 8px;
+    stroke-dasharray: 565;
+  }
+  
+  .timer2 {
+    fill: none;
+    stroke: #00ffff;
+    stroke-width: 10px;
+    stroke-dasharray: 565;
+    stroke-dashoffset: 200;
+    animation: anim2 1s linear forwards;
+  }
+  @keyframes anim2 {
+    100% {
+      stroke-dashoffset: 300;
+    }
+  }
