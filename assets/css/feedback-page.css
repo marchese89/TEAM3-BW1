@@ -19,27 +19,32 @@ p {
   color: white;
   margin-top: 1%;
 }
-.star {
+
+#stars {
   width: 90%;
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2%;
+  display: flex;
+  justify-content: center;
 }
 
-.star div {
-  display: inline-block;
+#stars div {
   margin: 0.4em;
+  justify-content: center;
 }
-.star div img {
+
+#stars div img {
   margin: 1px;
+  justify-content: center;
+  display: flex;
 }
 .star-not-filled {
-  fill: #0b113b;
+  filter: grayscale(100%);
+  opacity: 20%;
 }
-.star-filled {
-  fill: #00ffff;
-}
+
+
 p #feedback {
   font-size: 1em;
   color: white;
