@@ -3,19 +3,13 @@ const dataRecover = (difficulty, numQuestions) => {
     `https://opentdb.com/api.php?amount=${numQuestions}&category=18&difficulty=${difficulty}`
   )
     .then((response) => {
-      // Verifica se la richiesta è andata a buon fine
       if (!response.ok) {
         throw new Error("Errore nella richiesta");
       }
-      // Parsifica i dati JSON dalla risposta
       return response.json();
     })
     .then((data) => {
-      // Ora puoi utilizzare i dati JSON nella variabile "data"
-      console.log(data);
-      // Puoi anche assegnarli a una variabile globale se desideri
       localStorage.setItem("questions", JSON.stringify(data.results));
-      // window.questions = data.results;
       window.location.href = "Question page.html";
     })
     .catch((error) => {
@@ -38,7 +32,6 @@ document.getElementById("diff-form").addEventListener("submit", function (e) {
       break;
     }
   }
-  // console.log("difficoltà: " + selectedDiff);
 
   let radioButtons2 = document.getElementsByName("num-quest");
   let selectedNumQ = null;
@@ -50,7 +43,6 @@ document.getElementById("diff-form").addEventListener("submit", function (e) {
       break;
     }
   }
-  // console.log("n domande: " + selectedNumQ);
 
   dataRecover(selectedDiff, selectedNumQ);
 });
