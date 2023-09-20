@@ -146,6 +146,7 @@ const addOption2 = function (answers) {
 </div>
   `;
   questionForm.appendChild(newOption);
+  newOption.classList.add = "chosen";
 };
 
 //inseriamo la prima domanda nella pagina
@@ -173,14 +174,15 @@ console.log(firstQuestion);
 
 // addOption2();
 
-// manca qualcosa per azzerare l option
+// manca qualcosa per azzerare l option o il cambio di domanda azzera?
 
 const checkAndAdd = function () {
-  for (let i = 1; i < questions.length; i++) {
-    if (questions[i].type === "multiple") {
-      addOption2();
+  for (let i = 0; i < questions.length; i++);
+  {
+    if (questions[i].type === "boolean") {
+      return addOption1();
     } else {
-      addOption1();
+      return addOption2();
     }
   }
 };
