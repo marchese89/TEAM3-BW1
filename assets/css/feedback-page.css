@@ -1,21 +1,15 @@
 body {
-  box-sizing: border-box;
-  background-image: url(../assets/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  font-family: "Outfit", sans-serif;
+  background-image: url(../images/bg.jpg);
 }
-
-#logo-epicode {
-  width: 15em;
-  margin: 3em 0 10em 5em;
-}
-
+/* .logo img {
+  width: 10rem;
+  margin: 2em 5em;
+} */
 h1 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
   color: white;
-<<<<<<< Updated upstream
 }
 p {
   font-family: "Inter", sans-serif;
@@ -36,7 +30,8 @@ p {
 }
 
 #stars div {
-  margin: 0.4em;
+  /* margin: 0.4em; */
+  margin: 1em;
   justify-content: center;
 }
 
@@ -44,12 +39,13 @@ p {
   margin: 1px;
   justify-content: center;
   display: flex;
+  cursor: pointer;
 }
+
 .star-not-filled {
   filter: grayscale(100%);
   opacity: 20%;
 }
-
 
 p #feedback {
   font-size: 1em;
@@ -60,30 +56,15 @@ form {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-=======
-  font-size: 6em;
-  padding-bottom: 0.2em;
-  font-weight: 700;
-}
-
-main,
-footer {
->>>>>>> Stashed changes
   text-align: center;
 }
-
-h1 + div {
-  color: white;
-  font-size: 3em;
-  margin: 0.8em 5em;
-  line-height: 1.3em;
-}
-
-label {
-  color: white;
-  font-size: 3em;
+input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #d20094;
+  margin-top: 3%;
   display: block;
-<<<<<<< Updated upstream
   background-color: transparent;
   width: 45%;
   margin-left: auto;
@@ -99,58 +80,10 @@ button {
 a {
   color: rgb(1, 1, 41);
   text-decoration: none;
-=======
->>>>>>> Stashed changes
 }
 
-input {
-  margin: 4em 0 2em;
-  background: transparent;
-  border: 0;
-  border-bottom: 2px solid #900080;
-  width: 55em;
-  font-size: 1.5em;
-  padding-bottom: 0.8em;
-  color: white;
-}
-
-.star {
-  margin-right: 1em;
-  width: 4em;
-}
-
-#star {
-  margin: 3em 0 8em;
-}
-
-::placeholder {
-  padding-left: 1em;
-}
-
-button {
-  width: 10em;
-  height: 3em;
-  font-size: 1.7em;
-  color: #0b113b;
-  background-color: #00ffff;
-  box-shadow: 0 0 18px 0.5px #00ffff;
-  border: none;
-  font-weight: 700;
-  margin-top: 2em;
-  margin-bottom: 5em;
-}
-
-.star {
-  filter: brightness(0.2);
-  cursor: pointer;
-}
-
-.star {
-  filter: brightness(1);
-}
-
-button {
-  cursor: pointer;
+form {
+  text-align: center;
 }
 
 input {
