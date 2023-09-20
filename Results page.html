@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/new result.css" />
+    <link rel="stylesheet" href="assets/css/results-page.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Results page</title>
   </head>
@@ -17,6 +17,8 @@
           alt="Logo di Epicode"
         />
       </div>
+
+      <!--  -->
     </header>
     <main>
       <div class="title">
@@ -24,12 +26,12 @@
         <h3>The summary of your answers:</h3>
       </div>
       <div class="risultato">
-        <div class="correct">
+        <div class="correctR">
           <h2>Correct</h2>
           <h1>
-            <strong><span id="correct">66.7</span>&percnt;</strong>
+            <strong><span id="correctR">66.7</span>&percnt;</strong>
           </h1>
-          <p>4/6 questions</p>
+          <p class="cAnwers">4/6 questions</p>
         </div>
         <div class="cerchio">
           <div class="outter">
@@ -51,38 +53,17 @@
             width="300px"
             height="300px"
           >
-            <defs>
-              <linearGradient id="GradientColor">
-                <stop offset="0%" stop-color="#e91e63" />
-                <stop offset="100%" stop-color="#673ab7" />
-              </linearGradient>
-              <linearGradient id="GradientColor2">
-                <stop offset="0%" stop-color="#3ea46c" />
-                <stop offset="100%" stop-color="#00ffff" />
-              </linearGradient>
-            </defs>
-            <circle
-              class="circle1"
-              cx="150"
-              cy="150"
-              r="130"
-              stroke-linecap="round"
-            />
-            <circle
-              class="circle2"
-              cx="150"
-              cy="150"
-              r="130"
-              stroke-linecap="round"
-            />
+            <defs></defs>
+            <circle class="circle1" cx="150" cy="150" r="130" />
+            <circle class="circle2" cx="150" cy="150" r="130" />
           </svg>
         </div>
-        <div class="wrong">
+        <div class="wrongR">
           <h2>Wrong</h2>
           <h1>
-            <strong><span id="wrong">33.3</span>&percnt;</strong>
+            <strong><span id="wrongR">33.3</span>&percnt;</strong>
           </h1>
-          <p>2/6 questions</p>
+          <p class="wAnwers">2/6 questions</p>
         </div>
       </div>
       <div id="button-div">
@@ -90,5 +71,6 @@
       </div>
     </main>
     <p id="percent"></p>
+    <script src="assets/script/results.js"></script>
   </body>
 </html>
