@@ -4,70 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/question-page.css" />
-    <link rel="stylesheet" href="assets/css/style.css">
     <title>Question page</title>
   </head>
 
   <body>
-    <header>
-      <div class="container">
-          <img class="logo" src="../assets/images/epicode_logo.png" alt="logo epicode" />
-        <main>
-          <div>
-            <h1 id="titolo">How can I create a checkbox in HTML?</h1>
-          </div>
-
-
-
-
-
-          <div id="question-form">
-
-
-
-
-
-          </div>
-
-
-
-          <div class="button">
-            <div class="option">
-              <button  class="tasto"  type="radio">&lt;input type="check"&gt;</button>
-            </div>
-            <div class="option">
-              <button class="tasto"    type="radio">&lt;input type="checkbox"&gt;</button>
-            </div>
-            <br>
-            <div class="option">
-              <button class="tasto"  type="radio">&lt;checkbox&gt;</button>
-            </div>
-            <div class="option">
-              <button class="tasto" type="radio">&lt;input type="button"&gt;</button>
-            </div>
-            <div>
-              <button class="procedi">PROSSIMA</button>
-            </div>
-          </div>
-            
-          
-          
-          <div>
-            <p>Question 1<span>/10</span></p>
-          </div>
-        
+    <div class="container">
+      <main>
+        <img
+          class="logo"
+          src="../assets/images/epicode_logo.png"
+          alt="logo epicode"
+        />
+        <div>
+          <h3 id="titolo">How can I create a checkbox in HTML?</h3>
         </div>
-        
-        
-          
-        
-        
-      </div>
-    </header>
+        <div id="question-form"></div>
+        <!-- <div class="button">
+          <div class="option">
+            <button class="tasto" type="radio"></button>
+          </div>
+          <div class="option">
+            <button class="tasto" type="radio"></button>
+          </div>
+          <br />
+          <div class="option">
+            <button class="tasto" type="radio"></button>
+          </div>
+          <div class="option">
+            <button class="tasto" type="radio"></button>
+          </div>
+          <div>
+            <button class="filled-button">PROSSIMA</button>
+          </div>
+        </div> -->
+        <div>
+          <p id="question">
+            Question <span id="current-quest">1</span
+            ><span>/<span id="tot-quest">10</span></span>
+          </p>
+        </div>
+      </main>
+    </div>
     <script src="/assets/script/questions.js"></script>
-
-      </body>
+  </body>
 </html>
-

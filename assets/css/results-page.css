@@ -8,7 +8,7 @@ main {
   margin: 0 auto;
 }
 
-.correct {
+#correct {
   display: inline-block;
   height: 16 rem;
   text-align: left;
@@ -17,12 +17,12 @@ main {
 
 .cerchio {
   display: inline-block;
-  height: 16 rem;
+  height: 16rem;
 }
 
-.wrong {
+#wrong {
   display: inline-block;
-  height: 16 rem;
+  height: 16rem;
   text-align: right;
   justify-content: center;
   padding-top: 4em;

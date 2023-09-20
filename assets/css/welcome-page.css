@@ -61,7 +61,7 @@ a {
 }
 
 form button {
-  margin-left: 25%;
+  margin-left: 15%;
 }
 
 /* Personalizzo il label e quindi il contenitore dell'input */
@@ -113,4 +113,8 @@ form button {
 }
 .checkbox-wrapper input:checked ~ .checkmark::after {
   display: block;
+}
+
+.filled-button {
+  cursor: pointer;
 }

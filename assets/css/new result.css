@@ -7,7 +7,7 @@ body {
 }
 .correct {
   display: inline-block;
-  height: 16 rem;
+  /* height: 16em; */
   text-align: left;
   padding-top: 4em;
 }

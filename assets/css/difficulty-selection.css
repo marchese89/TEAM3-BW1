@@ -7,14 +7,17 @@ main {
   font-family: "Inter", sans-serif;
 }
 h4 {
-  font-size: 2.8em;
+  font-size: 2em;
   font-weight: bold;
   padding: 1em 0em 0.7em 0em;
   font-family: "Outfit", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
-#difficulty {
-  margin-top: 5em;
-}
+/* #difficulty {
+  margin-top: 1em;
+} */
 
 #many-questions {
   text-align: right;

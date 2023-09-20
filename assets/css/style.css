@@ -13,7 +13,7 @@ body {
 
 .logo {
   width: 10em;
-  padding-left: 4em;
+  /* padding-left: 4em; */
   padding-top: 4em;
 }
 
@@ -46,14 +46,22 @@ form button {
     8px -5px 15px #00ffff4d, -8px 5px 15px #00ffff4d;
 }
 
-.correct {
+.correct-ans {
   border: 2px solid #00ff00;
   box-shadow: 0 0 5px 2px #00ff00;
 }
 
-.wrong {
+.wrong-ans {
   border: 2px solid red;
   box-shadow: 0 0 5px 2px red;
+}
+
+button[type="submit"] {
+  cursor: pointer;
+}
+
+.filled-button {
+  cursor: pointer;
 }
 
 /* .accent-color {

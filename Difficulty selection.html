@@ -17,10 +17,9 @@
       />
     </header>
     <main>
-      <form>
+      <form id="diff-form">
         <div id="difficulty">
           <h4>Choose your difficulty</h4>
-
           <ul>
             <li>
               <input
@@ -28,6 +27,7 @@
                 id="easy"
                 value="easy"
                 name="diff-questions"
+                checked
               />
               <label for="Easy"> Easy</label>
             </li>
@@ -59,22 +59,24 @@
           <ul>
             <li>
               <label for="Ten">10</label>
-              <input type="radio" name="num-quest" id="Ten" />
+              <input type="radio" name="num-quest" value="10" checked />
             </li>
             <li>
               <label for="Twenty">20</label>
-              <input type="radio" name="num-quest" id="Twenty" />
+              <input type="radio" name="num-quest" value="20" />
             </li>
             <li>
               <label for="Twentyfive">25</label>
-              <input type="radio" name="num-quest" id="Twentyfive" />
+              <input type="radio" name="num-quest" value="25" />
             </li>
           </ul>
         </div>
         <button class="filled-button" type="submit">
-          <a href="Question page.html">PROCEED</a>
+          PROCEED
+          <!-- <a href="Question page.html"></a> -->
         </button>
       </form>
     </main>
+    <script src="assets/script/index.js"></script>
   </body>
 </html>
