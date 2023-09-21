@@ -122,3 +122,7 @@ una funzione,
 per l'animazione bisogna prendere (850 - 850* 0.percentuale)
 #correctR 
 */
+.niceFont {
+  font-size: 25px;
+  font-family: "Inter", sans-serif;
+}

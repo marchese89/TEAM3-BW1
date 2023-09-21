@@ -15,6 +15,7 @@ function numberOfQuestionsC() {
     questions.length === 25
   ) {
     allQuestionsR.innerText = correctAnswers + " / " + questions.length;
+    allQuestionsR.classList.add("niceFont");
   }
 }
 function numberOfQuestionsW() {
@@ -26,6 +27,7 @@ function numberOfQuestionsW() {
   ) {
     allQuestionsW.innerText =
       questions.length - correctAnswers + " / " + questions.length;
+    allQuestionsW.classList.add("niceFont");
   }
 }
 numberOfQuestionsC();
