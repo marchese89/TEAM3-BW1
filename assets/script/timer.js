@@ -14,7 +14,12 @@ function startTimer(durationInSeconds, display) {
       startTimer(time, display);
     }
     timer--;
-  }, 1000); // 1000 millisecondi (1 secondo)
+    const circle=document.getElementsByClassName("timer2")[0]
+    let percentuale=(timer/durationInSeconds)*100
+    circle.style.strokeDasharray = `${(324*percentuale)/100},500`;
+
+  }, 1000);// 1000 millisecondi (1 secondo)
+  
 }
 
 function resetTimer() {
@@ -24,3 +29,7 @@ function resetTimer() {
 const timer = document.getElementsByClassName("tempo")[0];
 
 startTimer(time, timer);
+
+
+// const percetualeTimer=(startTimer*100)/60
+
