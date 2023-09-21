@@ -30,7 +30,8 @@ p {
 }
 
 #stars div {
-  margin: 0.4em;
+  /* margin: 0.4em; */
+  margin: 1em;
   justify-content: center;
 }
 
@@ -38,12 +39,13 @@ p {
   margin: 1px;
   justify-content: center;
   display: flex;
+  cursor: pointer;
 }
+
 .star-not-filled {
   filter: grayscale(100%);
   opacity: 20%;
 }
-
 
 p #feedback {
   font-size: 1em;
