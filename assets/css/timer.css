@@ -21,18 +21,19 @@
     font-family: "Inter", sans-serif;
     font-weight: 400;
     margin: 0;
-    margin-top: 52px;
-    margin-right: -4px;
+    margin-top: -30px;
+    margin-right:  -198px;
   }
   .tempo {
     font-size: 30px;
     margin: 0;
-    margin-top: -2px;
-  }
+    margin-right: -193px;
+}
+  
   .remaining {
     font-size: 10px;
     margin: 0;
-    margin-right: -7px; 
+   margin-right: -202px;
     
    
   }
@@ -42,8 +43,8 @@
     
     top: -5rem;
     /* right: 0; */
-    margin-right: -135px;
-    margin-top: 8px;
+    margin-right:-328px;
+    margin-top:  -78px;;
   }
   .timer1 {
     fill: none;
