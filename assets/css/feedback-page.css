@@ -1,10 +1,11 @@
 body {
   background-image: url(../images/bg.jpg);
 }
-/* .logo img {
-  width: 10rem;
-  margin: 2em 5em;
-} */
+header {
+  text-align: center;
+  margin-right: 40%;
+  margin-bottom: 2em;
+}
 h1 {
   text-align: center;
   font-size: 60px;
