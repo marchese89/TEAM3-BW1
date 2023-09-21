@@ -106,11 +106,11 @@ bold {
   fill: none;
   stroke: #d20094;
   stroke-width: 35px;
-  stroke-dasharray: 850;
-  stroke-dashoffset: 0;
+  stroke-dasharray: 820;
+  stroke-dashoffset: 1.5;
   /* 850 = vuoto
       0 = pieno*/
-  animation: anim 1s linear forwards;
+  animation: anim 2s linear forwards;
 }
 @keyframes anim {
   100% {

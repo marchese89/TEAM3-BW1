@@ -52,14 +52,14 @@ console.log(giusteDomande);
 let percentuale = (giusteDomande * 100) / lungDomande;
 console.log(percentuale);
 // v qua abbiamo il offset da inserire nell'animazione
-let offset = (850 * percentuale) / 100;
+let offset = (820 * percentuale) / 100;
 console.log(offset);
 // v qua abbiamo la percentuale delle domande sbagliate
 let sbagliateDomande = 100 - percentuale;
 console.log(sbagliateDomande);
 // v per il offset pero dobbiamo invertire i valori, quindi il valore del nostro cerchio
-// 850 - offset
-let animationOffset = 850 - offset;
+// 820 - offset
+let animationOffset = 820 - offset;
 console.log(animationOffset);
 //
 //
