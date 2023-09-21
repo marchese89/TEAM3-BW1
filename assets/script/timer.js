@@ -1,4 +1,4 @@
-const time = 10;
+const time = 60;
 
 function startTimer(durationInSeconds) {
   let timer = durationInSeconds;

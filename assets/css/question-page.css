@@ -92,7 +92,7 @@ span#current-quest {
 }
 
 #question {
-  padding-top: 4em;
+  position: static;
   text-align: center;
 }
 
