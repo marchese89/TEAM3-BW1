@@ -54,7 +54,7 @@ p {
 
   color: white;
   border-radius: 2em;
-  height: 5em;
+  height: fit-content;
   font-weight: bolder;
   margin: -7%;
   width: 170%;
