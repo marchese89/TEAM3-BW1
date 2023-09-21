@@ -103,5 +103,6 @@ span#current-quest {
 }
 
 .chosen {
-  border: 3px solid #00ffff;
+  /* border: 3px solid #00ffff; */
+  background-color: rgb(183, 29, 207);
 }
