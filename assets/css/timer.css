@@ -1,69 +1,94 @@
 .timer {
-    display: flex;
-    height: 5rem;
-    margin-right: 3%;
-    justify-content: end;
-    text-align: center;
-    position: relative;
-  }
-  .outterTimer {
-    height: 1rem;
-    width: 90%;
-    border-radius: 50%;
-  }
-  .innerTimer {
-    border-radius: 50%;
-    right: 0;
-    text-align: right;
-  }
-  .seconds {
-    font-size: 10px;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    margin: 0;
-    margin-top: -30px;
-    margin-right:  -198px;
-  }
-  .tempo {
-    font-size: 30px;
-    margin: 0;
-    margin-right: -193px;
+  display: flex;
+  height: 5rem;
+  margin-right: 3%;
+  justify-content: end;
+  text-align: center;
+  position: relative;
 }
-  
-  .remaining {
-    font-size: 10px;
-    margin: 0;
-   margin-right: -202px;
-    
-   
+.outterTimer {
+  height: 1rem;
+  width: 90%;
+  border-radius: 50%;
+}
+.innerTimer {
+  border-radius: 50%;
+  right: 0;
+  text-align: right;
+}
+.seconds {
+  font-size: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  margin-top: -30px;
+  margin-right: -198px;
+}
+.tempo {
+  font-size: 30px;
+  margin: 0;
+  margin-right: -193px;
+}
+
+.remaining {
+  font-size: 10px;
+  margin: 0;
+  margin-right: -202px;
+}
+.timer svg {
+  position: absolute;
+
+  top: -5rem;
+  /* right: 0; */
+  margin-right: -328px;
+  margin-top: -78px;
+}
+.timer1 {
+  fill: none;
+  stroke: #ebeded46;
+  stroke-width: 8px;
+  stroke-dasharray: 565;
+}
+
+.timer2 {
+  fill: none;
+  stroke: #00ffff;
+  stroke-width: 0.7em; /*10px*/
+  stroke-dasharray: 324, 500;
+  stroke-dashoffset: 0;
+  animation: anim2 10s linear forwards;
+}
+@keyframes anim2 {
+  100% {
+    stroke-dashoffset: 324;
   }
-  .timer svg {
-    position: absolute;
-    
-    
-    top: -5rem;
-    /* right: 0; */
-    margin-right:-328px;
-    margin-top:  -78px;;
-  }
-  .timer1 {
-    fill: none;
-    stroke: #ebeded46;
-    stroke-width: 8px;
-    stroke-dasharray: 565;
-  }
-  
-  .timer2 {
-    fill: none;
-    stroke: #00ffff;
-    stroke-width: 10px;
-    stroke-dasharray: 0,500;
-        /*565*/        
-    stroke-dashoffset: 60;
-    /* animation: anim2 1s linear forwards; */
-  }
-  @keyframes anim2 {
-    100% {
-      stroke-dashoffset:300;
-    }
-  }
+}
+
+.donat {
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  /* border: 1.5vmin solid transparent; */
+  border: 2.5vmin solid transparent;
+}
+.outer-circle {
+  position: relative;
+  /* width: 90%; */
+  width: 6em;
+  height: 6em;
+  background: linear-gradient(grey, grey) content-box no-repeat,
+    conic-gradient(grey var(--outer_percent_deg, 0%), 0, #00ffff 100%)
+      border-box;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-timer {
+  font-size: 4vh;
+  color: purple;
+}
+
+.clock-time:before {
+  content: var(--timer-minutes-seconds, "60");
+}
