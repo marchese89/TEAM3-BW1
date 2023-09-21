@@ -1,28 +1,27 @@
-/* .container {
-  width: 30rem;
-  margin: 0 auto;
-} */
-/* Usiamo la pagina new results finche non finisco le modifiche */
 main {
   text-align: center;
   margin: 0 auto;
 }
-
-#correct {
+body {
+  margin: 2%;
+}
+.correctR {
   display: inline-block;
   height: 16 rem;
   text-align: left;
   padding-top: 4em;
 }
-
 .cerchio {
-  display: inline-block;
+  display: flex;
+  height: 16 rem;
+  width: 16rem;
   height: 16rem;
+  text-align: center;
+  position: relative;
 }
 
-#wrong {
+.wrongR {
   display: inline-block;
-  height: 16rem;
   text-align: right;
   justify-content: center;
   padding-top: 4em;
@@ -33,14 +32,40 @@ main {
   display: flex;
   width: 60vw;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
 }
 
+.congratulations {
+  padding: 1.8em 0em;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+.send-cert {
+  padding-top: 2rem;
+  font-size: 0.7rem;
+}
+.outter {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+}
+.inner {
+  margin: 1.5rem;
+  height: 13rem;
+  width: 12rem;
+  border-radius: 50%;
+}
+
+.cerchio svg {
+  position: absolute;
+  top: 0;
+  left: -2rem;
+}
 button a {
   text-decoration: none;
   color: white;
 }
-
 button {
   background-color: rgba(0, 0, 0, 0);
   width: 10em;
@@ -51,34 +76,49 @@ button {
   font-size: 1em;
 }
 
-.cerchio {
-  border: 2.5em solid white;
-  border-radius: 50%;
-  height: 16rem;
-  width: 16rem;
-}
-
-#send-cert {
-  padding: 1em;
-}
-
 .cerchio > div {
   padding-top: 1.5em;
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
-.cerchio > div > p {
-  padding-top: 2em;
-  padding: 0.8em 1em;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-}
-
-.cerchio > div > p:nth-of-type(2) {
-  color: #00ffff;
-}
 
 #button-div {
   text-align: center;
-  margin: 0 auto;
+  margin: 3rem auto;
 }
+bold {
+  color: #00ffff;
+}
+.cerchio svg {
+  transform: rotate(269deg);
+}
+.circle1 {
+  fill: none;
+  stroke: #00ffff;
+  stroke-width: 28px;
+  stroke-dasharray: 850;
+}
+
+.circle2 {
+  fill: none;
+  stroke: #d20094;
+  stroke-width: 35px;
+  stroke-dasharray: 850;
+  stroke-dashoffset: 0;
+  /* 850 = vuoto
+      0 = pieno*/
+  animation: anim 1s linear forwards;
+}
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 80;
+  }
+}
+/* to do in js, #correctR deve essere inserito facendo un calcolo 
+delle risposte giuste. per wrongR possiamo usare (100 - correctR = wrongR+%)
+circle2 dashoffset lo troviamo con 850 - (correctR * 8.5)
+circle 2 dashoffset deve essere inserito tramite js creando
+una funzione, 
+per l'animazione bisogna prendere (850 - 850* 0.percentuale)
+#correctR 
+*/
