@@ -3,7 +3,7 @@ const questions = JSON.parse(localStorage.getItem("questions"));
 console.log(questions.length);
 
 // correct Anwers (esempio)
-let correctAnswers = 20;
+let correctAnswers = localStorage.getItem("correctAnsweres");
 // correct Anwers
 
 // RESULT
