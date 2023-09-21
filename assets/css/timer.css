@@ -77,14 +77,16 @@
   height: 4em;
   background: linear-gradient(rgb(41, 1, 67), rgb(58, 1, 76)) content-box
       no-repeat,
-    conic-gradient(purple var(--outer_percent_deg, 0%), 0, #00ffff 100%)
+    conic-gradient(
+        rgb(96, 94, 96) var(--outer_percent_deg, 0%),
+        0,
+        #00ffff 100%
+      )
       border-box;
   z-index: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  
 }
 
 .clock-timer {
