@@ -128,6 +128,49 @@ const answererdQuestion = (e) => {
   }, 1000);
 };
 
+const answererdQuestionTimer = () => {
+  // e.target.disabled = true;
+  // console.log("entro in answered question");
+  const chosen = document.getElementsByClassName("chosen")[0];
+  // console.log("chosen", chosen);
+  if (chosen === undefined) {
+    wrongAnsweres++;
+    const buttons = document.getElementsByClassName("tasto");
+    const buttonsArray = Array.from(buttons);
+    buttonsArray.forEach((e) => {
+      if (e.innerText === questions[currentQuestion]["correct_answer"]) {
+        e.classList.add("correct-ans");
+      }
+    });
+    setTimeout(function () {
+      nextQuestion();
+    }, 1000);
+  } else {
+    // console.log("scelta", chosen);
+    const value = chosen.innerText;
+    if (questions[currentQuestion]["correct_answer"] === value) {
+      //risposta corretta
+      chosen.classList.add("correct-ans");
+      correctAnsweres++;
+    } else {
+      //risposta sbagliata
+      chosen.classList.add("wrong-ans");
+      //mettiamo il verde sulla risposta corretta
+      const buttons = document.getElementsByClassName("tasto");
+      const buttonsArray = Array.from(buttons);
+      buttonsArray.forEach((e) => {
+        if (e.innerText === questions[currentQuestion]["correct_answer"]) {
+          e.classList.add("correct-ans");
+        }
+      });
+      wrongAnsweres++;
+    }
+    setTimeout(function () {
+      nextQuestion();
+    }, 1000);
+  }
+};
+
 // const form = document.getElementById("question-form");
 // form.addEventListener("submit", answererdQuestion);
 
@@ -147,3 +190,7 @@ const selectAnswere = (obj) => {
 document
   .getElementsByClassName("next-q")[0]
   .addEventListener("click", answererdQuestion);
+
+const stampa = () => {
+  console.log("stampa");
+};
