@@ -71,3 +71,12 @@ const percSbagliate = document.getElementById("wrongR");
 percSbagliate.textContent = 100 - percentuale;
 //
 //
+let styleElement = document.getElementById("keyframes");
+let cssRule = document.createTextNode(
+  "@keyframes anim {" +
+    "100% { stroke-dashoffset: " +
+    animationOffset +
+    " ; }" +
+    "}"
+);
+styleElement.appendChild(cssRule);
