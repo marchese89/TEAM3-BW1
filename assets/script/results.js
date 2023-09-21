@@ -80,3 +80,16 @@ let cssRule = document.createTextNode(
     "}"
 );
 styleElement.appendChild(cssRule);
+//
+//
+
+if (percentuale < 60) {
+  const Sorry = document.getElementsByClassName("congratulations");
+  const tryAgain = document.getElementsByClassName("send-cert");
+  for (let i = 0; i < Sorry.length; i++) {
+    Sorry[i].innerText = "Sorry... \nyou didnt pass";
+    tryAgain[i].innerText = "Try again next time";
+    Sorry[i].style.fontSize = "15px";
+    tryAgain[i].style.fontSize = "20px";
+  }
+}
