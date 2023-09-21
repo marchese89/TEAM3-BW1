@@ -2,7 +2,7 @@ const time = 10;
 
 function startTimer(durationInSeconds) {
   let timer = durationInSeconds;
-  const intervalId = setInterval(function () {
+  intervalId = setInterval(function () {
     // display.textContent = timer;
     document.documentElement.style.setProperty(
       "--timer-minutes-seconds",
@@ -13,6 +13,7 @@ function startTimer(durationInSeconds) {
     }
     if (timer === 0) {
       answererdQuestionTimer();
+      clearInterval(intervalId);
       startTimer(time);
     }
 

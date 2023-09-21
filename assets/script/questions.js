@@ -1,3 +1,5 @@
+var intervalId;
+
 const shuffle = (array) => {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -101,6 +103,8 @@ const nextQuestion = () => {
 };
 
 const answererdQuestion = (e) => {
+  clearInterval(intervalId);
+  startTimer(time);
   e.target.disabled = true;
   // console.log("entro in answered question");
   const chosen = document.getElementsByClassName("chosen")[0];
