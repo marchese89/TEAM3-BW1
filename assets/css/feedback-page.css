@@ -20,7 +20,16 @@ p {
   margin-top: 1%;
 }
 
-#stars {
+/* #stars {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+} */
+
+.stars {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -29,18 +38,23 @@ p {
   justify-content: center;
 }
 
-#stars div {
+/* #stars div {
+  margin: 0.4em;
+  justify-content: center;
+} */
+
+.stars a {
   /* margin: 0.4em; */
-  margin: 1em;
+  padding: 0.4em;
   justify-content: center;
 }
 
-#stars div img {
+/* #stars div img {
   margin: 1px;
   justify-content: center;
   display: flex;
   cursor: pointer;
-}
+} */
 
 .star-not-filled {
   filter: grayscale(100%);
@@ -89,4 +103,21 @@ form {
 input {
   outline: none;
   padding: 1em;
+}
+
+/* stelline */
+.stars a {
+  /* opacity: 20%; */
+  cursor: pointer;
+}
+
+.stars:hover a {
+  opacity: 100%;
+}
+.stars a:hover {
+  opacity: 100%;
+}
+.stars a:hover ~ a {
+  opacity: 20%;
+  filter: grayscale(100%);
 }
