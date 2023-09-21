@@ -107,11 +107,11 @@ bold {
   stroke-dashoffset: 0;
   /* 850 = vuoto
       0 = pieno*/
-  animation: anim 2s linear forwards;
+  animation: anim 1s linear forwards;
 }
 @keyframes anim {
   100% {
-    stroke-dashoffset: 300;
+    stroke-dashoffset: 80;
   }
 }
 /* to do in js, #correctR deve essere inserito facendo un calcolo 
