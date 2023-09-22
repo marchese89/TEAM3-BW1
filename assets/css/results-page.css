@@ -88,6 +88,7 @@ button {
 #button-div {
   text-align: center;
   margin: 3rem auto;
+  margin-bottom: 1em;
 }
 bold {
   color: #00ffff;

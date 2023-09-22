@@ -22,6 +22,14 @@ const addOption1 = function (answers) {
 </div>
 <br />
 <div>
+<br />
+<div class="option">
+<button class="tasto hidden" type="radio" onclick="selectAnswere(this)"></button>
+</div>
+<div class="option">
+<button class="tasto hidden" type="radio" onclick="selectAnswere(this)"></button>
+</div>
+<br />
   <button class="filled-button next-q">NEXT</button>
 </div>
   `;
@@ -99,13 +107,22 @@ const nextQuestion = () => {
   document
     .getElementsByClassName("next-q")[0]
     .addEventListener("click", answererdQuestion);
-  // document.getElementsByClassName("next-q")[0].disabled = false;
 };
 
 const answererdQuestion = (e) => {
+  e.target.disabled = true;
+  //mettiamo il verde sulla risposta corretta
+  const buttons = document.getElementsByClassName("tasto");
+  const buttonsArray = Array.from(buttons);
+  buttonsArray.forEach((btn) => {
+    if (btn.innerText === questions[currentQuestion]["correct_answer"]) {
+      btn.disabled = true;
+      btn.classList.add("correct-ans");
+    }
+  });
   clearInterval(intervalId);
   startTimer(time);
-  e.target.disabled = true;
+
   // console.log("entro in answered question");
   const chosen = document.getElementsByClassName("chosen")[0];
   console.log("scelta", chosen);
@@ -117,26 +134,27 @@ const answererdQuestion = (e) => {
   } else {
     //risposta sbagliata
     chosen.classList.add("wrong-ans");
-    //mettiamo il verde sulla risposta corretta
-    const buttons = document.getElementsByClassName("tasto");
-    const buttonsArray = Array.from(buttons);
-    buttonsArray.forEach((e) => {
-      if (e.innerText === questions[currentQuestion]["correct_answer"]) {
-        e.classList.add("correct-ans");
-      }
-    });
     wrongAnsweres++;
   }
+
   setTimeout(function () {
     nextQuestion();
   }, 1000);
 };
 
 const answererdQuestionTimer = () => {
-  // e.target.disabled = true;
-  // console.log("entro in answered question");
   const chosen = document.getElementsByClassName("chosen")[0];
-  // console.log("chosen", chosen);
+
+  //mettiamo il verde sulla risposta corretta
+  const buttons = document.getElementsByClassName("tasto");
+  const buttonsArray = Array.from(buttons);
+  buttonsArray.forEach((e) => {
+    if (e.innerText === questions[currentQuestion]["correct_answer"]) {
+      e.disabled = true;
+      e.classList.add("correct-ans");
+    }
+  });
+
   if (chosen === undefined) {
     wrongAnsweres++;
     const buttons = document.getElementsByClassName("tasto");
@@ -159,26 +177,14 @@ const answererdQuestionTimer = () => {
     } else {
       //risposta sbagliata
       chosen.classList.add("wrong-ans");
-      //mettiamo il verde sulla risposta corretta
-      const buttons = document.getElementsByClassName("tasto");
-      const buttonsArray = Array.from(buttons);
-      buttonsArray.forEach((e) => {
-        if (e.innerText === questions[currentQuestion]["correct_answer"]) {
-          e.classList.add("correct-ans");
-        }
-      });
       wrongAnsweres++;
     }
+
     setTimeout(function () {
       nextQuestion();
     }, 1000);
   }
 };
-
-// const form = document.getElementById("question-form");
-// form.addEventListener("submit", answererdQuestion);
-
-// console.log("domande estratte", );
 
 const selectAnswere = (obj) => {
   const key = document.getElementsByClassName("chosen")[0];

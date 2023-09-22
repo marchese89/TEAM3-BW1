@@ -3,7 +3,6 @@ const time = 60;
 function startTimer(durationInSeconds) {
   let timer = durationInSeconds;
   intervalId = setInterval(function () {
-    // display.textContent = timer;
     document.documentElement.style.setProperty(
       "--timer-minutes-seconds",
       "'" + timer + "'"
@@ -18,8 +17,6 @@ function startTimer(durationInSeconds) {
     }
 
     let percentuale = (timer / time) * 100;
-    console.log("percentuale", percentuale);
-    console.log("timer", timer);
 
     document.documentElement.style.setProperty(
       "--outer_percent_deg",
@@ -27,7 +24,7 @@ function startTimer(durationInSeconds) {
     );
 
     timer--;
-  }, 1000); // 1000 millisecondi (1 secondo)
+  }, 1000);
 }
 
 function resetTimer() {
