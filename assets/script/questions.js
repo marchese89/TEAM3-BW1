@@ -129,7 +129,6 @@ const answererdQuestion = (e) => {
   const value = chosen.innerText;
   if (questions[currentQuestion]["correct_answer"] === value) {
     //risposta corretta
-    chosen.classList.add("correct-ans");
     correctAnsweres++;
   } else {
     //risposta sbagliata
@@ -143,6 +142,7 @@ const answererdQuestion = (e) => {
 };
 
 const answererdQuestionTimer = () => {
+  document.getElementsByClassName("next-q")[0].disabled = true;
   const chosen = document.getElementsByClassName("chosen")[0];
 
   //mettiamo il verde sulla risposta corretta
@@ -200,7 +200,3 @@ const selectAnswere = (obj) => {
 document
   .getElementsByClassName("next-q")[0]
   .addEventListener("click", answererdQuestion);
-
-const stampa = () => {
-  console.log("stampa");
-};
