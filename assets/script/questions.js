@@ -115,8 +115,8 @@ const answererdQuestion = (e) => {
   const buttons = document.getElementsByClassName("tasto");
   const buttonsArray = Array.from(buttons);
   buttonsArray.forEach((btn) => {
+    btn.disabled = true;
     if (btn.innerText === questions[currentQuestion]["correct_answer"]) {
-      btn.disabled = true;
       btn.classList.add("correct-ans");
     }
   });
@@ -149,8 +149,8 @@ const answererdQuestionTimer = () => {
   const buttons = document.getElementsByClassName("tasto");
   const buttonsArray = Array.from(buttons);
   buttonsArray.forEach((e) => {
+    e.disabled = true;
     if (e.innerText === questions[currentQuestion]["correct_answer"]) {
-      e.disabled = true;
       e.classList.add("correct-ans");
     }
   });
