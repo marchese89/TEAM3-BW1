@@ -1,7 +1,7 @@
 .timer {
   display: flex;
   height: 5rem;
-  margin-right: 3%;
+  margin-right: -20%;
   justify-content: end;
   text-align: center;
   position: relative;
@@ -67,24 +67,23 @@
 .donat {
   aspect-ratio: 1 / 1;
   border-radius: 50%;
-  /* border: 1.5vmin solid transparent; */
   border: 2.5vmin solid transparent;
 }
 .outer-circle {
-  position: relative;
-  /* width: 90%; */
-  width: 4em;
-  height: 4em;
+  width: 5em;
+  height: 5em;
   background: linear-gradient(rgb(41, 1, 67), rgb(58, 1, 76)) content-box
       no-repeat,
-    conic-gradient(rgb(77, 77, 77) var(--outer_percent_deg, 0%), 0, #00ffff 100%)
+    conic-gradient(
+        rgb(77, 77, 77) var(--outer_percent_deg, 0%),
+        0,
+        #00ffff 100%
+      )
       border-box;
   z-index: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  
 }
 
 .clock-timer {
@@ -95,4 +94,26 @@
 
 .clock-time:before {
   content: var(--timer-minutes-seconds, "60");
+}
+
+#seconds {
+  position: absolute;
+  padding-top: 3em;
+  margin-left: 2.5em;
+  margin-right: 2.6em;
+  z-index: 1;
+  font-size: 0.7em;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+#remaining {
+  position: absolute;
+  z-index: 2;
+  margin-top: 6em;
+  padding-top: 0.3em;
+  margin-right: 2.4em;
+  font-size: 0.7em;
+  color: white;
+  font-family: "Inter", sans-serif;
 }
